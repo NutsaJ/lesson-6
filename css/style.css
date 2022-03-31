@@ -1,0 +1,63 @@
+
+body{   
+    background-color: yellowgreen;
+    background-image: linear-gradient(0deg, yellow, yellowgreen);
+    }
+.inline {
+    display: inline-block;
+    position: absolute;
+}
+.cup-ramen{
+    width:500px;
+    margin:auto;
+    animation: cupR 5s infinite 1s ;
+    position: absolute;
+    z-index: 5;
+}
+@keyframes cupR {
+    0% { transform: rotate(20deg);}
+    50% { transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+.fishcake{
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    position: relative;    
+    animation-name: fishcake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+@keyframes fishcake {
+    0% { transform: rotate(45deg);}
+    25% {  transform: rotate(90deg);}
+    50% { transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+    
+}
+
+.narutoA{
+    width: 500px;
+    height: 800px;
+        
+}
+.naruto {
+    height: 700px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+}
+@keyframes example {
+    0%   {transform: translateX(50%)}
+    25%  {transform: translateX(55%)}
+    50%  {transform: translateX(60%)}
+    75%  {transform: translateX(65%)}
+    100% { transform: translateX(70%)}
+  }
